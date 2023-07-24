@@ -1,0 +1,10 @@
+{
+	"name": "hydroxide",
+	"image": "mcr.microsoft.com/devcontainers/go:0-1-bullseye",
+	"remoteUser": "vscode",
+	"containerUser": "vscode",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind,Z",
+	"runArgs": [
+		"--userns=keep-id"
+	]
+}
